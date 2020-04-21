@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<!-- The important part here is the name - Note: the use of the bat: namespace
+     which is defined further on in the document -->
+<model name="sdc:batnewmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<!-- Optional meta-data about the model -->
+	<description>Custom Model</description>
+	
+	<version>1.0</version>
+	<!-- Imports are required to allow references to definitions in other models -->
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+	</imports>
+	<!-- Introduction of new namespaces defined by this model -->
+	<!-- NOTE: The following namespace bat.new.model should be changed to reflect your own namespace -->
+	<namespaces>
+		<namespace uri="sdc.new.model" prefix="sdc"/>
+	</namespaces>
+	<aspects>
+		<!-- Definition of new Content Aspect: Image Classification -->
+		<aspect name="sdc:sisgestdocprocarp">
+			<title>Sistema gestión documental procesos carpetas</title>
+			<properties>
+				<property name="sdc:creador">
+					<title>Creador</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdc:materia">
+					<title>Materia</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdc:autor">
+					<title>Autor</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdc:perspectiva">
+					<title>Perspectiva</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdc:proceso">
+					<title>Proceso</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdc:subproceso">
+					<title>Subproceso</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+					<index enabled="true">
+						<tokenised>false</tokenised>
+           				</index>
+				</property>
+				<property name="sdc:esConfidencial">
+					<title>Es Confidencial</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdc:usuariosQueHanParticipado">
+					<title>Usuarios que han participado</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdc:expedientesAntecesores">
+					<title>Expedientes Antecesores</title> 
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+</model>

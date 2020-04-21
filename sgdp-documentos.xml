@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<!-- The important part here is the name - Note: the use of the bat: namespace
+     which is defined further on in the document -->
+<model name="sdd:batnewmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<!-- Optional meta-data about the model -->
+	<description>Custom Model</description>
+	
+	<version>1.0</version>
+	<!-- Imports are required to allow references to definitions in other models -->
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+	</imports>
+	<!-- Introduction of new namespaces defined by this model -->
+	<!-- NOTE: The following namespace bat.new.model should be changed to reflect your own namespace -->
+	<namespaces>
+		<namespace uri="sdd.new.model" prefix="sdd"/>
+	</namespaces>
+	<aspects>
+		<!-- Definition of new Content Aspect: Image Classification -->
+		<aspect name="sdd:sisgestdocprodoc">
+			<title>Sistema gestión documental procesos documentos</title>
+			<properties>
+				<property name="sdd:emisor">
+					<title>Emisor</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdd:cdr">
+					<title>cdr</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdd:numeroDeDocumento">
+					<title>Número de documento</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdd:tipoDeDocumento">
+					<title>Tipo de documento</title> 
+					<type>d:text</type>
+					<mandatory>true</mandatory>					
+				</property>
+				<property name="sdd:fechaDeCreacion">
+					<title>Fecha de creación</title> 
+					<type>d:date</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="sdd:fechaDeRecepcion">
+					<title>Fecha de recepcion</title> 
+					<type>d:date</type>					
+				</property>
+				<property name="sdd:cartaRelacionada">
+					<title>Carta Relacionada</title> 
+					<type>d:text</type>					
+				</property>
+				<property name="sdd:otro">
+					<title>Otro</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdd:firmaSimple">
+					<title>Firma Simple</title> 
+					<type>d:int</type>
+				</property>
+				<property name="sdd:numeroDeFirma">
+					<title>Numero de Firma</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdd:esDocumentoOficial">
+					<title>Es documento oficial</title> 
+					<type>d:text</type>
+				</property>	
+				<property name="sdd:documentoSubproceso">
+					<title>Subproceso</title> 
+					<type>d:text</type>
+				</property>	
+				<property name="sdd:documentoMateria">
+					<title>materia</title> 
+					<type>d:text</type>
+				</property>	
+				<property name="sdd:documentoAutor">
+					<title>autor</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdd:documentoNombreExpediente">
+					<title>documentoNombreExpediente</title> 
+					<type>d:text</type>
+				</property>
+				<property name="sdd:idCategoriaDocumento">
+					<title>ID Categoria Documento</title> 
+					<type>d:int</type>
+				</property>
+				<property name="sdd:categoriaDocumento">
+					<title>Categoria Documento</title> 
+					<type>d:text</type>
+				</property>						
+			</properties>
+		</aspect>
+	</aspects>
+</model>
