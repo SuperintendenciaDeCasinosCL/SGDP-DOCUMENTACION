@@ -1,0 +1,17 @@
+Pasos para crear esquema sgdp
+1.- Se crea el equema sgdp en la BD alfresco
+2.- Se ingresa a la maquina de la BD:
+	[root@scjpostgresqa ~]# su - postgres
+	bash-4.1$ psql
+	postgres=#  GRANT sgdp TO alfresco;
+3.- Se cambia owner del esquema sgdp a sgdp
+
+2.- Se ingresa a la maquina de la BD:
+	[root@scjpostgresqa ~]# su - postgres
+	bash-4.1$ psql
+	postgres=# ALTER SCHEMA sgdp OWNER TO alfresco;
+	postgres=# DROP ROLE sgdp;
+	postgres=# CREATE USER sgdp WITH LOGIN NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
+	postgres=# ALTER USER sgdp PASSWORD 'xxxxxx';
+	postgres=# ALTER SCHEMA sgdp OWNER TO sgdp;
+	
