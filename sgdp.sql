@@ -2156,9 +2156,9 @@ $BODY$
   COST 100;
 
 -- ----------------------------
--- Alter sequences owned by
+-- Alter sequences owned by: No aplicar
 -- ----------------------------
-SELECT setval('"sgdp"."SEQ_ID_ACCION_HISTORICO_INST_DE_TAREA"', 12, true);
+/*SELECT setval('"sgdp"."SEQ_ID_ACCION_HISTORICO_INST_DE_TAREA"', 12, true);
 SELECT setval('"sgdp"."SEQ_ID_ARCHIVOS_HIST_INST_DE_TAREAS"', 40, true);
 SELECT setval('"sgdp"."SEQ_ID_ARCHIVOS_INST_DE_TAREA"', 2591, true);
 SELECT setval('"sgdp"."SEQ_ID_ASIGNACION_NUMERO_DOC"', 102, true);
@@ -2216,7 +2216,7 @@ SELECT setval('"sgdp"."SGDP_HISTORIAL_SEGUIMIENTO_IN_ID_HISTORICO_INSTANCIA_PROC
 ALTER SEQUENCE "sgdp"."SGDP_USUARIO_NOTIFICACION_TAR_ID_USUARIO_NOTIFICACION_TAREA_seq"
 OWNED BY "sgdp"."SGDP_USUARIO_NOTIFICACION_TAREA"."ID_USUARIO_NOTIFICACION_TAREA";
 SELECT setval('"sgdp"."SGDP_USUARIO_NOTIFICACION_TAR_ID_USUARIO_NOTIFICACION_TAREA_seq"', 57, true);
-SELECT setval('"sgdp"."SGDP_USUARIO_NOTIFICACION_TAR_ID_USUARIO_NOTIFI_TAREA_seq2"', 78, false);
+SELECT setval('"sgdp"."SGDP_USUARIO_NOTIFICACION_TAR_ID_USUARIO_NOTIFI_TAREA_seq2"', 78, false);*/
 
 -- ----------------------------
 -- Primary Key structure for table SGDP_ACCIONES_HIST_INST_DE_TAREAS
