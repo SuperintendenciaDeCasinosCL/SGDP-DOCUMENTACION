@@ -53,9 +53,6 @@
 					<title>Subproceso</title> 
 					<type>d:text</type>
 					<mandatory>true</mandatory>
-					<index enabled="true">
-						<tokenised>false</tokenised>
-           				</index>
 				</property>
 				<property name="sdc:esConfidencial">
 					<title>Es Confidencial</title> 
@@ -66,8 +63,8 @@
 					<type>d:text</type>
 				</property>
 				<property name="sdc:expedientesAntecesores">
-					<title>Expedientes Antecesores</title> 
-					<type>d:text</type>
+    					<title>Expedientes Antecesores</title> 
+    					<type>d:text</type>
 				</property>
 			</properties>
 		</aspect>

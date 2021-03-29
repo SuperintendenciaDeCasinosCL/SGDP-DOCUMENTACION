@@ -72,8 +72,8 @@
 				<property name="sdd:esDocumentoOficial">
 					<title>Es documento oficial</title> 
 					<type>d:text</type>
-				</property>	
-				<property name="sdd:documentoSubproceso">
+				</property>
+                                <property name="sdd:documentoSubproceso">
 					<title>Subproceso</title> 
 					<type>d:text</type>
 				</property>	
@@ -96,7 +96,7 @@
 				<property name="sdd:categoriaDocumento">
 					<title>Categoria Documento</title> 
 					<type>d:text</type>
-				</property>						
+				</property>
 			</properties>
 		</aspect>
 	</aspects>
